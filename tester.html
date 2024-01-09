@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Input Example</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" />
+    <input type="checkbox" id="showPassword" /> Show Password
+
+    <script src="script.js"></script>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var passwordInput = document.getElementById("password");
+      var showPasswordCheckbox = document.getElementById("showPassword");
+
+      showPasswordCheckbox.addEventListener("change", function () {
+        // Check if the checkbox is checked
+        if (showPasswordCheckbox.checked) {
+          // Change the type of the password input to "text" to show the password
+          passwordInput.type = "text";
+        } else {
+          // Change the type of the password input back to "password" to hide the password
+          passwordInput.type = "password";
+        }
+      });
+    });
+  </script>
+</html>

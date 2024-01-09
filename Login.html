@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="Homapage.css">
+   <script src="formValidation.js" defer></script>
+</head>
+<body class="bg_img">
+    <nav class="navHeader">
+        <div class="header_Finansial" id="Financialhead" style="cursor: pointer;    cursor: pointer;
+        height: 24px;
+        width: fit-content;padding-bottom: 20px;">
+          <span  style=" color: aliceblue !important;
+          height: 100px;
+          font-size: 25px;
+          position: relative;
+          top: -10px;" id="Financialhead">The Financial Analyser</span>
+        </div>
+        <div class="log_sign">
+          <span ><a href="Login.html" class="letter1" >Login</a></span>
+          <span ><a href="" class="letter1" >SignUp</a></span>
+        </div>
+      </nav>
+      <div style="justify-content: center; display: flex;">
+    <div class="container">
+        <div class="title detailes"  style="font-family:sans-serif;">
+            Login
+        </div>
+        <form id="submit-form">
+            <div class="user-details">
+                <div class="input-box" >
+                    <span class="detailes"  style="font-family:sans-serif;">FullName</span>
+                    <input name="Fname" id="fullname"  type="text" placeholder="Enter FullName" required>
+                    <p style="font-family:math; font-size: 14px;" id="fullNInfo"></p>
+                </div>
+                <div class="input-box">
+                    <span class="detailes"  style="font-family:sans-serif;">UserName</span>
+                    <input name="Uname" id="Uname" type="text" placeholder="Enter UserName" required>
+                    <p style="font-family: math; font-size: 14px;" id="unameInfo"></p>
+                </div>
+                <div class="input-box">
+                    <span class="detailes"  style="font-family:sans-serif;">PhoneNumber</span>
+                    <input name="Phnumber" id="Pnumber" type="number" placeholder="Enter your PhoneNumber" required>
+                    <p style="font-family: math; font-size: 14px;" id="phoneInfo"></p>
+                </div>
+                <div class="input-box">
+                    <span class="detailes"  style="font-family:sans-serif;">Password</span>
+                    <input name="PSW" id="showPass" type="password" placeholder="Enter your Password" required>
+                  <img style="height: 20px; width: 20px; cursor: pointer; filter: invert();" src="hide.png" id="eyeshow" alt="eye" onclick="showpass()">
+                  <p style="font-family: math; font-size: 14px;" id="passInfo"></p>
+                </div>
+                <div class="input-box">
+                    <span class="detailes" style="font-family:sans-serif;">Email id</span>
+                    <input name="Cpsw" type="text" placeholder="Enter Email id " id="email" required>
+                </div>
+                <div class="input-box">
+                    <span class="detailes"  style="font-family:sans-serif;">Confirm Password</span>
+                    <input name="Cpsw" type="password" placeholder="Confirm Password" id="confirmPass" required>
+                    <p style="font-family: math; font-size: 14px;" id="confirmInfo"></p>
+                </div>
+                <div class="input-box">
+                    <span class="detailes"  style="font-family:sans-serif;">Date Of birth</span>
+                    <input name="Cpsw" type="date" placeholder="Date of birth" id="DOB" required>
+                    <p style="font-family: math; font-size: 14px;" id="DobInfo"></p>
+                </div>
+                </div>
+            </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+    </div>
+</div>
+
+</body>
+</html>
